@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Guadamos la ruta de donde estamos parados
 DIR=$(pwd)

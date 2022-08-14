@@ -19,7 +19,7 @@ fi
 DIR=$(pwd)
 
 # Descargamos el archivo de "URL" y lo guardamos en "FILE"
-curl --silent $URL -o $DIR/$FILE
+curl --silent $URL -o "$DIR"/$FILE
 
 # Realizamos la busqueda de "SEARCH" en "FILE" e imprimimos en pantalla el nro de linea de las ocurrencias
-grep -n $SEARCH $DIR/$FILE | cut -d":" -f1 | less
+grep -n $SEARCH "$DIR"/$FILE | cut -d":" -f1 | less
